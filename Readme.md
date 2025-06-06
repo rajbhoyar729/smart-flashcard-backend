@@ -78,13 +78,13 @@ The API will be accessible at `http://localhost:8000`. You can find interactive 
 *   **`POST /flashcard`**
     *   **Description:** Adds a new flashcard to the system and infers its subject.
     *   **Request Body (JSON):**
-        ```json
-        {
+```json
+{
           "student_id": "your_student_id",
           "question": "What is the capital of France?",
           "answer": "Paris"
-        }
-        ```
+}
+```
     *   **Response (JSON):** Includes a success message and the inferred subject.
 
 *   **`GET /get-subject?student_id={your_student_id}&limit={number}`**
